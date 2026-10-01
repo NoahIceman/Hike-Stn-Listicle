@@ -9,7 +9,7 @@
 <meta name="description" content="Ti risparmio il tempo e i soldi che ho buttato io: 7 rimedi provati, uno solo che uso ancora ogni sera.">
 <meta property="og:title" content="Ho provato 7 rimedi per la mia stenosi lombare. Solo uno ha funzionato davvero.">
 <meta property="og:description" content="Ti risparmio il tempo e i soldi che ho buttato io: 7 rimedi provati, uno solo che uso ancora ogni sera.">
-<meta property="og:image" content="og.webp?v=2898042a">
+<meta property="og:image" content="og.webp?v=a253fa2c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700;800;900&display=swap">
@@ -84,6 +84,20 @@ h1 .g{color:var(--green)}
 .proof .av{width:40px;height:40px;border-radius:50%;background:var(--pale);display:grid;place-items:center;font-weight:800;color:var(--head)}
 .proof .st{color:#F5A623;letter-spacing:1px}
 footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-size:12.5px;line-height:1.55;color:#5b6650}
+/* sticky bottom CTA (Hike .sticky_bar): slides up after the intro, hides while an offer block is on screen */
+.sbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top-left-radius:12px;border-top-right-radius:12px;
+  box-shadow:0 -8px 20px #363e3626;padding:10px 16px calc(8px + env(safe-area-inset-bottom));transform:translateY(110%);
+  transition:transform .25s ease}
+.sbar.on{transform:none}
+.sbar-in{max-width:500px;margin:0 auto}
+.sbar .btn{min-height:56px;font-size:18px}
+.sbar-proof{display:flex;align-items:center;justify-content:center;gap:5px;margin:7px 0 0;font-size:11px;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;color:#0c2016cc;line-height:21px}
+.sbar-proof img{width:21px;height:21px;border-radius:50%;object-fit:cover}
+.sbar-proof svg{width:12px;height:12px}
+.sbar-proof span{margin-left:5px}
+body.has-sbar footer{padding-bottom:140px}
+@media (prefers-reduced-motion:reduce){.sbar{transition:none}}
 @media (min-width:900px){
   h1{font-size:38px}
   .slot{display:grid;grid-template-columns:340px 1fr;column-gap:34px;align-items:start}
@@ -112,7 +126,7 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s1">
     <h2>1. Non devo fare esercizi. Mi sdraio e basta.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s1.webp?v=2898042a" aria-label="Una mano che mostra il cuscino Tricalma in un soggiorno luminoso"><source src="v3s1.mp4?v=8ea65bb6" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s1.webp?v=a253fa2c" aria-label="Rosanna appoggia il Tricalma sul divano, si sdraia e preme il pulsante"><source src="v4s1.mp4?v=0e9267dd" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -124,11 +138,11 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s2">
     <h2>2. Ho smesso di cercare panchine.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s2.webp?v=caa53755" aria-label="Rosanna fa un selfie mentre passeggia in piazza con il marito"><source src="v3s2.mp4?v=5d2a175d" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s2.webp?v=60806c2c" aria-label="Rosanna fa un selfie mentre passeggia nel parco con il marito Franco"><source src="v4s2.mp4?v=189ebb34" type="video/mp4"></video>
       
     </div>
     <div class="txt">
-      <p>Prima, per uscire di casa, calcolavo il percorso: dov'è la prossima panchina, quanto manca, dove posso fermarmi senza farmi notare. Le passeggiate con mio marito erano diventate sempre più corte.</p><p>Dopo qualche settimana di sessioni serali, una domenica siamo arrivati fino in piazza e mi sono accorta che non avevo cercato una panchina nemmeno una volta. <strong>Sembra poco. Per me era tutto.</strong></p>
+      <p>Prima, per uscire di casa, calcolavo il percorso: dov'è la prossima panchina, quanto manca, dove posso fermarmi senza farmi notare. Le passeggiate con mio marito erano diventate sempre più corte.</p><p>Dopo qualche settimana di sessioni serali, una domenica abbiamo fatto tutto il giro del parco e mi sono accorta che non avevo cercato una panchina nemmeno una volta. <strong>Sembra poco. Per me era tutto.</strong></p>
       
       <p><a class="see" href="https://www.tepora.it/products/tepora-tricalma-la-schiena?utm_source=presell&amp;utm_medium=listicle&amp;utm_campaign=lst-7c-02&amp;utm_content=inline-s2"><span aria-hidden="true">👉</span>Guarda come funziona Tricalma</a></p>
     </div>
@@ -136,7 +150,7 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s3">
     <h2>3. Finalmente qualcosa che fa tre cose insieme.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s3.webp?v=39717904" aria-label="Il dito preme il pulsante e i cuscinetti si scaldano"><source src="v3s3.mp4?v=d437f9be" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s3.webp?v=30e17e60" aria-label="Il dito preme il pulsante, i cuscinetti si scaldano e l&#39;arco si solleva"><source src="v4s3.mp4?v=98554dc8" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -148,7 +162,7 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s4">
     <h2>4. La mattina mi alzo dal letto senza quel blocco.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s4.webp?v=26a07f2d" aria-label="Rosanna si alza dal letto con naturalezza al mattino"><source src="v3s4.mp4?v=425ef96a" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s4.webp?v=5c8349da" aria-label="Rosanna si alza dal letto e apre le persiane al sole del mattino"><source src="v4s4.mp4?v=a04deaab" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -160,7 +174,7 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s5">
     <h2>5. Dormo meglio. E non sono l&#39;unica.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s5.webp?v=18d317df" aria-label="Il marito di Rosanna sorride con il suo Tricalma"><source src="v3s5.mp4?v=69d9e7ac" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s5.webp?v=f67a8510" aria-label="Franco sdraiato sul Tricalma la sera, Rosanna legge accanto a lui"><source src="v4s5.mp4?v=9ef88942" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -183,8 +197,9 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
 </div>
   <section class="slot" id="s6">
     <h2>6. Niente più appuntamenti. Niente più sale d&#39;attesa.</h2>
-    <div class="tile">
-      <img src="v3s6.webp?v=4835a192" alt="Rosanna legge sul divano con il Tricalma sotto la schiena" loading="lazy" width="720" height="720">
+    <div class="tile" data-video>
+      <video muted loop playsinline preload="none" poster="v4s6orto.webp?v=d37d63ad" aria-label="Il sabato mattina Rosanna annaffia i pomodori nel suo orto"><source src="v4s6orto.mp4?v=178c16d7" type="video/mp4"></video>
+      
     </div>
     <div class="txt">
       <p>Prenotare, uscire, guidare, aspettare, fare la seduta, tornare a casa. E la settimana dopo, ricominciare. Per anni la mia schiena ha deciso la mia agenda.</p><p>Tricalma resta lì, sul divano, pronto quando voglio io. <strong>15 minuti, senza uscire di casa.</strong> Il sabato mattina, adesso, lo passo nell'orto.</p>
@@ -195,7 +210,7 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s7">
     <h2>7. Faccio la spesa senza aggrapparmi al carrello.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s7.webp?v=ec03dfda" aria-label="Rosanna esce dall&#39;alimentari con la spesa"><source src="v3s7.mp4?v=00d01b06" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s7.webp?v=bddf3bb1" aria-label="Rosanna fa la spesa con il cestino, senza carrello"><source src="v4s7.mp4?v=c88003cf" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -207,7 +222,7 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s8">
     <h2>8. Morbido. Niente palline dure, niente colpi.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s8.webp?v=6fa2a843" aria-label="Una mano che preme il cuscinetto morbido del Tricalma"><source src="v3s8.mp4?v=b667d990" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s8.webp?v=773d81a2" aria-label="Una mano che preme il cuscinetto morbido del Tricalma"><source src="v4s8.mp4?v=987bc3e9" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -230,7 +245,7 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
   <section class="slot" id="s10">
     <h2>10. Ho speso quasi 2.000 €. Questo l&#39;ho pagato una volta.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v3s10.webp?v=3d703ee6" aria-label="Il Tricalma tolto dalla scatola in una cucina italiana luminosa"><source src="v3s10.mp4?v=0bbd7be4" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v4s10real.webp?v=a95ca1cf" aria-label="Il Tricalma tolto dalla sua scatola di spedizione"><source src="v4s10real.mp4?v=50fe9fa8" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -257,6 +272,10 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
     <span><b>Paola G.</b> · Cliente verificata <span class="st" aria-label="5 stelle">★★★★★</span><br>e oltre <strong>20.000 schiene</strong> in Italia</span></div>
   <footer>Contenuto sponsorizzato. La storia è basata sull&#39;esperienza di una nostra cliente; le immagini con persone sono illustrative e realizzate con l&#39;ausilio dell&#39;intelligenza artificiale. Le informazioni non sostituiscono il parere del medico. Tricalma è un dispositivo per il benessere e il comfort della zona lombare. In caso di gravidanza, pacemaker, terapie anticoagulanti o condizioni particolari, chiedi prima al tuo medico.<br><br>© 2026 · Schiena-Insider</footer>
 </main>
+<div class="sbar" data-sbar><div class="sbar-in">
+  <a class="btn" href="https://www.tepora.it/products/tepora-tricalma-la-schiena?utm_source=presell&amp;utm_medium=listicle&amp;utm_campaign=lst-7c-02&amp;utm_content=sticky">SÌ, VOGLIO PROVARLO <span aria-hidden="true">→</span></a>
+  <p class="sbar-proof"><img src="reviewer.webp?v=9a1592c3" alt="" width="21" height="21"><b>Emanuela O.</b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1D9BF0" d="M12 1l2.6 2.1 3.3-.4 1 3.2 3 1.5-.8 3.3L23 13.5l-2.4 2.3.2 3.4-3.3.6-1.6 3-3.1-1.4L9.7 23 8 20.1l-3.3-.8.3-3.4L2.6 13.6 4.3 10.7 3.6 7.4l3.1-1.3L8 3l3.3.6z"/><path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.3l3 3 6-6.3"/></svg><span>E oltre 20.000 schiene in Italia</span></p>
+</div></div>
 <script>
 (function(){
   var w=window,d=document;
@@ -273,6 +292,13 @@ footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-siz
     if('IntersectionObserver' in w){var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target.querySelector('video');if(e.isIntersecting){if(v.paused)play(v);}else if(!v.paused){v.pause();}});},{threshold:.25});boxes.forEach(function(b){io.observe(b);});}
     else boxes.forEach(function(b){play(b.querySelector('video'));});
   }
+  /* sticky bottom CTA: show after the intro, hide while an offer block is visible (no double CTA) */
+  var sb=d.querySelector('[data-sbar]');
+  if(sb){d.body.classList.add('has-sbar');var offers=[].slice.call(d.querySelectorAll('.offer')),inOffer=0;
+    function sbar(){sb.classList.toggle('on',w.scrollY>500&&!inOffer);}
+    if('IntersectionObserver' in w){var so=new IntersectionObserver(function(es){es.forEach(function(e){e.target._v=e.isIntersecting;});
+      inOffer=offers.some(function(o){return o._v;});sbar();},{threshold:.15});offers.forEach(function(o){so.observe(o);});}
+    w.addEventListener('scroll',sbar,{passive:true});sbar();}
   /* attribution pass-through: forward every ad parameter (utm_*, fbclid, Triple Whale tw_*) to the store links */
   var q=new URLSearchParams(w.location.search);
   if(q.toString()){[].slice.call(d.querySelectorAll('a[href*="tepora.it"]')).forEach(function(a){
