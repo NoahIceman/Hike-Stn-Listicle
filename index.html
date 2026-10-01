@@ -83,6 +83,19 @@ h1 .g{color:var(--green)}
 .proof{display:flex;align-items:center;gap:12px;justify-content:center;margin:6px 0 28px;font-size:14.5px;line-height:1.35}
 .proof .av{width:40px;height:40px;border-radius:50%;background:var(--pale);display:grid;place-items:center;font-weight:800;color:var(--head)}
 .proof .st{color:#F5A623;letter-spacing:1px}
+/* customer reviews under the final CTA */
+.revs{margin:8px 0 30px}
+.revs h3{font-size:22px;line-height:1.2;font-weight:900;color:var(--head);margin:0 0 4px;text-align:center}
+.revs .sub{text-align:center;font-size:13.5px;color:#5b6650;margin:0 0 16px}
+.rev{background:#fff;border:1px solid #E3E7DD;border-radius:8px;padding:16px 16px 14px;margin:0 0 12px}
+.rev-h{display:flex;align-items:center;gap:10px;margin:0 0 8px}
+.rev-h img,.rev-h .ini{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
+.rev-h .ini{display:grid;place-items:center;background:var(--pale);font-weight:800;color:var(--head);font-size:17px}
+.rev-h b{display:flex;align-items:center;gap:4px;font-size:15px;color:var(--head)}
+.rev-h b svg{width:15px;height:15px}
+.rev-h small{display:block;font-size:12.5px;color:#306336;font-weight:700}
+.rev .st{color:#F5A623;letter-spacing:1px;font-size:15px;margin-left:auto;align-self:flex-start}
+.rev p{margin:0;font-size:15.5px;line-height:1.55}
 footer{border-top:1px solid #E3E7DD;margin-top:20px;padding:20px 0 40px;font-size:12.5px;line-height:1.55;color:#5b6650}
 /* sticky bottom CTA (Hike .sticky_bar): slides up after the intro, hides while an offer block is on screen */
 .sbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top-left-radius:12px;border-top-right-radius:12px;
@@ -162,7 +175,7 @@ body.has-sbar footer{padding-bottom:140px}
   <section class="slot" id="s4">
     <h2>4. La mattina mi alzo dal letto senza quel blocco.</h2>
     <div class="tile" data-video>
-      <video muted loop playsinline preload="none" poster="v6s4.webp?v=e7931b88" aria-label="Rosanna si alza dal letto e apre le tende al sole del mattino"><source src="v6s4.mp4?v=18f42710" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="v9s4_bed_a.webp?v=3db24e95" aria-label="Al mattino Rosanna rifà il letto piegandosi senza fatica"><source src="v9s4_bed_a.mp4?v=c61545e9" type="video/mp4"></video>
       
     </div>
     <div class="txt">
@@ -268,6 +281,16 @@ body.has-sbar footer{padding-bottom:140px}
     <p class="micro">Provalo oggi: 100 notti di prova e rimborso completo.</p>
   </div>
 </div>
+  <section class="revs" aria-label="Recensioni">
+    <h3>Cosa dicono le clienti che lo usano ogni sera</h3><p class="sub">Recensioni verificate dal negozio Tepora</p>
+    <article class="rev"><div class="rev-h"><span class="ini" aria-hidden="true">M</span>
+      <div><b>Mirella F.<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1D9BF0" d="M12 1l2.6 2.1 3.3-.4 1 3.2 3 1.5-.8 3.3L23 13.5l-2.4 2.3.2 3.4-3.3.6-1.6 3-3.1-1.4L9.7 23 8 20.1l-3.3-.8.3-3.4L2.6 13.6 4.3 10.7 3.6 7.4l3.1-1.3L8 3l3.3.6z"/><path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.3l3 3 6-6.3"/></svg></b><small>Acquisto verificato</small></div><span class="st" aria-label="5 stelle">★★★★★</span></div>
+      <p>«Ho una stenosi lombare e il problema principale era stare in piedi, dopo cinque minuti in cucina dovevo appoggiarmi da qualche parte. Da quando lo uso la sera riesco a stare in piedi molto più a lungo senza quel peso alle gambe. La quotidianità è cambiata parecchio.»</p></article><article class="rev"><div class="rev-h"><img src="review2.webp?v=7ed42db4" alt="Alessandra B." width="44" height="44" loading="lazy">
+      <div><b>Alessandra B.<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1D9BF0" d="M12 1l2.6 2.1 3.3-.4 1 3.2 3 1.5-.8 3.3L23 13.5l-2.4 2.3.2 3.4-3.3.6-1.6 3-3.1-1.4L9.7 23 8 20.1l-3.3-.8.3-3.4L2.6 13.6 4.3 10.7 3.6 7.4l3.1-1.3L8 3l3.3.6z"/><path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.3l3 3 6-6.3"/></svg></b><small>Acquisto verificato</small></div><span class="st" aria-label="5 stelle">★★★★★</span></div>
+      <p>«Ero scettica: di massaggiatori finiti nell&#39;armadio ne ho già due. Questo invece è acceso ogni sera da due mesi. Mi alzo dal letto senza il solito blocco dei primi passi.»</p></article><article class="rev"><div class="rev-h"><img src="review3.webp?v=f3eb5cee" alt="Franca D." width="44" height="44" loading="lazy">
+      <div><b>Franca D.<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1D9BF0" d="M12 1l2.6 2.1 3.3-.4 1 3.2 3 1.5-.8 3.3L23 13.5l-2.4 2.3.2 3.4-3.3.6-1.6 3-3.1-1.4L9.7 23 8 20.1l-3.3-.8.3-3.4L2.6 13.6 4.3 10.7 3.6 7.4l3.1-1.3L8 3l3.3.6z"/><path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.3l3 3 6-6.3"/></svg></b><small>Acquisto verificato</small></div><span class="st" aria-label="5 stelle">★★★★★</span></div>
+      <p>«Ho 71 anni e con la tecnologia non vado d&#39;accordo. Qui c&#39;è un pulsante solo: lo tengo premuto e parte. Lo uso da sola ogni sera dopo il telegiornale, senza chiedere aiuto a nessuno.»</p></article>
+  </section>
   <div class="proof"><span class="av">PG</span>
     <span><b>Paola G.</b> · Cliente verificata <span class="st" aria-label="5 stelle">★★★★★</span><br>e oltre <strong>20.000 schiene</strong> in Italia</span></div>
   <footer>Contenuto sponsorizzato. La storia è basata sull&#39;esperienza di una nostra cliente; le immagini con persone sono illustrative e realizzate con l&#39;ausilio dell&#39;intelligenza artificiale. Le informazioni non sostituiscono il parere del medico. Tricalma è un dispositivo per il benessere e il comfort della zona lombare. In caso di gravidanza, pacemaker, terapie anticoagulanti o condizioni particolari, chiedi prima al tuo medico.<br><br>© 2026 · Schiena-Insider</footer>
